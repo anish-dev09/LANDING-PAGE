@@ -172,7 +172,7 @@ export const MultiStepForm = () => {
                       className={`p-4 border rounded-lg cursor-pointer transition-colors hover:border-primary ${
                         formData.tone === tone.value ? 'border-primary bg-primary/5' : 'border-border'
                       }`}
-                      onClick={() => updateFormData({ tone: tone.value as any })}
+                      onClick={() => updateFormData({ tone: tone.value as 'professional' | 'friendly' | 'bold' | 'minimalist' })}
                     >
                       <div className="font-medium">{tone.label}</div>
                       <div className="text-sm text-muted-foreground">{tone.description}</div>
@@ -254,17 +254,36 @@ export const MultiStepForm = () => {
                 <Sparkles className="w-8 h-8 text-primary" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Ready to Generate!</h3>
+                <h3 className="text-xl font-semibold mb-2">
+                  {isGenerating ? '🤖 AI is Creating Your Page...' : 'Ready to Generate!'}
+                </h3>
                 <p className="text-muted-foreground">
-                  We'll create a beautiful landing page based on your information.
+                  {isGenerating 
+                    ? 'Our AI is crafting unique, professional content tailored to your needs. This usually takes 5-10 seconds.'
+                    : "Click 'Generate Page' to let AI create a beautiful landing page based on your information."
+                  }
                 </p>
               </div>
-              <div className="bg-muted/50 p-4 rounded-lg text-left space-y-2 text-sm">
-                <div><strong>Product:</strong> {formData.productName}</div>
-                <div><strong>Industry:</strong> {formData.industry}</div>
-                <div><strong>Tone:</strong> {formData.tone}</div>
-                <div><strong>Features:</strong> {features.join(', ')}</div>
-              </div>
+              {!isGenerating && (
+                <div className="bg-muted/50 p-4 rounded-lg text-left space-y-2 text-sm">
+                  <div><strong>Product:</strong> {formData.productName}</div>
+                  <div><strong>Industry:</strong> {formData.industry}</div>
+                  <div><strong>Tone:</strong> {formData.tone}</div>
+                  <div><strong>Features:</strong> {features.join(', ')}</div>
+                </div>
+              )}
+              {isGenerating && (
+                <div className="space-y-3">
+                  <div className="flex justify-center gap-2">
+                    <div className="w-2 h-2 bg-primary rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></div>
+                    <div className="w-2 h-2 bg-primary rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
+                    <div className="w-2 h-2 bg-primary rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></div>
+                  </div>
+                  <p className="text-xs text-muted-foreground">
+                    Powered by Google Gemini AI
+                  </p>
+                </div>
+              )}
             </div>
           )}
         </CardContent>

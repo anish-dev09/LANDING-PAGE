@@ -10,8 +10,8 @@ import { Sparkles, Zap, Palette, Layout, ArrowRight, Star, BookOpen, Info, HelpC
 const features = [
   {
     icon: Sparkles,
-    title: 'AI-Powered Generation',
-    description: 'Create compelling copy and content using advanced AI technology'
+    title: 'Google Gemini AI',
+    description: 'Generate unique, professional content using Google\'s advanced Gemini AI technology'
   },
   {
     icon: Layout,
@@ -20,13 +20,13 @@ const features = [
   },
   {
     icon: Palette,
-    title: 'Theme Customization',
-    description: 'Apply your brand colors and switch between light/dark themes instantly'
+    title: 'Smart Customization',
+    description: 'AI adapts to your brand tone, industry, and target audience automatically'
   },
   {
     icon: Zap,
-    title: 'Real-time Preview',
-    description: 'See your changes instantly with live preview across all device sizes'
+    title: 'Instant Generation',
+    description: 'Get your complete landing page in 5-10 seconds with real-time AI processing'
   }
 ];
 
@@ -74,11 +74,11 @@ const Index = () => {
       <section className="container mx-auto px-4 py-20 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-blue-600 to-primary bg-clip-text text-transparent">
-            BUILD LANDING PAGES WITH AI
+            AI-POWERED LANDING PAGE BUILDER
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Transform your ideas into beautiful, responsive landing pages in minutes.
-            Just describe your product and watch AI create a complete website for you.
+            Transform your ideas into beautiful, responsive landing pages using Google Gemini AI.
+            Describe your product and watch AI create professional, unique content in seconds.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button

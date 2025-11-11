@@ -1,17 +1,18 @@
 
-# LANDING PAGE GENERATOR
+# AI-POWERED LANDING PAGE GENERATOR
 
 <div align="center">
   <img src="https://img.shields.io/badge/React-18.3.1-blue?style=for-the-badge&logo=react" alt="React" />
   <img src="https://img.shields.io/badge/TypeScript-5.5.3-blue?style=for-the-badge&logo=typescript" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Vite-5.4.1-purple?style=for-the-badge&logo=vite" alt="Vite" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.4.11-teal?style=for-the-badge&logo=tailwind-css" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Google_Gemini-AI-orange?style=for-the-badge&logo=google" alt="Gemini AI" />
   <img src="https://img.shields.io/badge/Node.js-Backend-green?style=for-the-badge&logo=node.js" alt="Node.js" />
 </div>
 
 <div align="center">
-  <h3>🚀 Template-Based Landing Page Builder</h3>
-  <p>Transform your ideas into beautiful, responsive landing pages in minutes using smart templates and customization tools.</p>
+  <h3>🤖 AI-Powered Landing Page Builder with Google Gemini</h3>
+  <p>Transform your ideas into beautiful, responsive landing pages using Google Gemini AI. Get unique, professional content generated in seconds.</p>
 </div>
 
 ---
@@ -40,7 +41,7 @@
 
 ## 🎯 Project Overview
 
-**LANDING PAGE GENERATOR** is a modern web application that creates professional, responsive landing pages in minutes using smart templates. Users simply describe their product or service, and the system generates a complete landing page with customized content, modern design, and optimized layout.
+**AI-POWERED LANDING PAGE GENERATOR** is a modern web application that creates professional, responsive landing pages using Google Gemini AI. Users describe their product or service, and the AI generates unique, compelling content with professional copywriting, tailored headlines, feature descriptions, and testimonials in seconds.
 
 ### 🎪 Live Demo
 - **Frontend**: `http://localhost:8081`
